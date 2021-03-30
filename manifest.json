@@ -1,0 +1,12 @@
+{
+  "name" : "検索結果の鮮度チェック",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "chrome拡張。Googleの検索結果に表示される期間を特定の日時で色分け",
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search*"],
+      "js": ["content.js"]
+    }
+  ]
+}
